@@ -1,6 +1,7 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 import random
+from debil_mode import handle_debil_mode 
 
 DIALOGUE_LIST = [
     "ну а дальше что", "и что дальше", "нет, ты объясни", "но почему", "а это почему",

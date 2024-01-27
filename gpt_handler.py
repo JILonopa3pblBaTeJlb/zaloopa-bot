@@ -3,12 +3,10 @@ import g4f
 import re
 from time import time
 from dialogue_handler import DIALOGUE_LIST
+from debil_mode import handle_debil_mode
 
 PROVIDERS = ['Liaobots', 'GeekGpt']
 last_gpt_response_time = 0
-
-def handle_debil_mode(text, context):
-    return re.sub(r'[^\w\s]', '', text).lower() if context.bot_data.get('debil_mode') else text
 
 def get_gpt_response(prompt, update, context):
     global last_gpt_response_time

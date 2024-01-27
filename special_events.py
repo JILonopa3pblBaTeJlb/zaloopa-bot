@@ -41,6 +41,8 @@ SPECIAL_EVENTS_LIST = {
     "санчик": "handle_sanya",
     "санюшка": "handle_sanya",
     "саш": "handle_sanya",
+    "саша": "handle_sanya",
+    "сашка": "handle_sanya",
     "санчо": "handle_sanya",
     "санчес": "handle_sanya",
     "олександер": "handle_sanya",

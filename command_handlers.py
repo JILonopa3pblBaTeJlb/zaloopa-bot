@@ -28,7 +28,7 @@ def brain(update: Update, context: CallbackContext):
     except Exception as e:
         update.message.reply_text(f"Произошла ошибка: {e}")
 
-def brainedit(update: Update, context: CallbackContext):
+def brainedittrololo(update: Update, context: CallbackContext):
     new_prompt = ' '.join(context.args)
     with open('prompt.txt', 'w') as file:
         file.write(new_prompt)
