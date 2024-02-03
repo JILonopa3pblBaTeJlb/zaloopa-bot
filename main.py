@@ -1,9 +1,8 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from message_handler import handle_message
-from command_handlers import start, restart, diag, brain, brainedit, debil
+from command_handlers import start, restart, diag, brain, brainedittrololo, debil
 from roll_handler import roll
-
-TOKEN = "YOUR_TOKEN_HERE"
+from config import TOKEN
 
 def send_error_to_user(update, context):
     msg = update.message
@@ -25,7 +24,7 @@ def main():
     dp.add_handler(CommandHandler("roll", roll))
     dp.add_handler(CommandHandler("diag", diag))
     dp.add_handler(CommandHandler("brain", brain))
-    dp.add_handler(CommandHandler("brainedit", brainedit))
+    dp.add_handler(CommandHandler("brainedittrololo", brainedittrololo))
     dp.add_handler(CommandHandler("debil", debil))
     
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))

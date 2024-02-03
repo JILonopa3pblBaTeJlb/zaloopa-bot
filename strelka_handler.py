@@ -1,13 +1,8 @@
 import random
 from telegram import Update
 from telegram.ext import CallbackContext
+from config import STRELKA_REPLYS_LIST
 
-STRELKA_REPLYS_LIST = [
-    "то чо борзый дохуя самый", "слышь охуел ты ли чо?", "ебать ты дерзота",
-    "втащу тебе чо скажешь тогда", "ты ща в рог словиш э", "ты предъявить решил или чо я не вкурю",
-    "слышь рамс попутал кучерявый я эбал завязывай моросить", "чорт я тя найду",
-    "попутавший ты ли чо", "э бля нахуй фильтруй базар", "слышь ты реально выхватишь сейчас"
-]
 
 def handle_strelka(update: Update, context: CallbackContext, user_id):
     chat_data = context.chat_data

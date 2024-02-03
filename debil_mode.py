@@ -23,7 +23,7 @@ def handle_debil_mode(text, context):
         for i, word in enumerate(words):
             new_words.append(word)
             if (i + 1) % 3 == 0 and len(word) > 3:
-                new_words.append(random.choice(["нахуй", "сукбля", "сцук", "бля", "бля нахуй ебать", "епта", "епты", "епт"]))
+                new_words.append(random.choice(["нахуй", "сцук", "блд", "слыш", "епта", "епты", "епт"]))
         
         text = ' '.join(new_words) + ' ' + ' '.join(random.sample(["ебать", "сук", "бля", "нахуй", "псдц"], k=3))
 

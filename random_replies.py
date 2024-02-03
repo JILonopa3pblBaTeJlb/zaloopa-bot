@@ -10,7 +10,7 @@ def ejikificate(update: Update, context: CallbackContext):
     update.message.reply_text(ejikificated_message)
 
 def garipotterize(update: Update, context: CallbackContext):
-    garipotterized_message = "Гарри Поттер и " + ' '.join(update.message.text.split()[:3])
+    garipotterized_message = "гарри поттер и " + ' '.join(update.message.text.split()[:3])
     update.message.reply_text(garipotterized_message)
 
 def osleficate(update: Update, context: CallbackContext):
@@ -26,5 +26,5 @@ def handle_sanya_for_random(update: Update, context: CallbackContext):
 
 def random_reply(update: Update, context: CallbackContext):
     functions = [reduplicate, garipotterize, osleficate, send_anekdot, ejikificate, handle_sanya_for_random]
-    probabilities = [0.3, 0.1, 0.1, 0.05, 0.05, 0.4]
+    probabilities = [0.3, 0.05, 0.2, 0.3, 0.05, 0.1]
     random.choices(functions, weights=probabilities, k=1)[0](update, context)
